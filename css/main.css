@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a1d69;
+
+}
+
+
+header{
+    background-color: #0a1d69;
+    top: 0;
+    position: sticky;
+}
+
+
+header h1{
+    text-decoration: underline;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke ;
+    margin-bottom: 10px;
+    font-style: oblique;
+    margin-left: 30px;
+}
+
+.menu{
+    background-image: linear-gradient(blue, black);
+    margin: 15px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid;
+    margin-top: 0.1px;
+    
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu ul li{
+    list-style-type: none;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li:hover{
+    background-image: linear-gradient(blue, black);
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+    background-image: linear-gradient(blue, black);
+    padding: 8px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px; 
+    margin-top: 30px;
+    font-style: italic;
+    border: solid black;
+    color: whitesmoke;
+    background-image: linear-gradient(blue, black);
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 80px;
+}
+
+h4{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.menu-contacto{
+    background-image: linear-gradient(blue, black);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid;
+}
+
+.menu-contacto ul li{
+    list-style-type: none;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 5px;
+    position: relative;
+}
+
+.menu-contacto ul li:hover{
+    background-image: linear-gradient(blue, black);
+}
+
+.menu-contacto ul ul{
+    display: none;
+    position: absolute;
+}
+
+.menu-contacto ul li:hover > ul{
+    display: block;
+    background-image: linear-gradient(blue, black);
+    padding: 8px;
+}
+
+.main-contacto{
+    background-color: #06113C;
+    color: whitesmoke;
+    margin: 30px 650px 30px 650px;
+    padding: 15px;
+    border: solid;
+    text-align: center;
+}    
+
+.main-contacto div{
+    margin: 15px;
+    font-size: 20px;
+}
+
+legend{
+    font-size: 24.72px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+section p{
+    margin: 10px;
+}
+
+.menu-micuenta{
+    background-color: #06113C;
+    color: whitesmoke;
+    margin: 30px 650px 30px 650px;
+    padding: 15px;
+    border: solid;
+}
+
+.micuenta-div{
+    margin: 15px;
+    font-size: 15px;
+}
+
+.parrafo-productos{
+    background-image: url(../img/descarga.png) ;
+}
+
+
+.botines1{
+    height: 250px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.botines2{
+    height: 250px;
+    width: 300px;
+}
+
+.botines3{
+    height: 250px;
+    width: 300px;
+}
+
+.botines4{
+    height: 250px;
+    width: 300px;
+}
+
+.camisetas1{
+    height: 250px;
+    width: 230px;
+}
+
+.camisetas2{
+    height: 250px;
+    width: 230px;
+}
+
+.camisetas3{
+    height: 250px;
+    width: 230px;
+}
+
+.camisetas4{
+    height: 250px;
+    width: 230px;
+}
+
+section{
+    display: grid;
+    grid-template-areas:"botines1 botines2"
+                        "botines3 botines4"
+                        "camiseta1 camiseta2"
+                        "camiseta3 camiseta4";
+    margin: 50px;  
+    padding: 5px;  
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.menu-contacto ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icono{
+    height: 70px;
+    margin-left: 20px;
+}
+
+.icono:hover{
+    transform: scale(1.1);
+}
+
+p{
+    margin: 20px;
+}
+
+.imagenSub{
+    display: none;
+}
+
+@media screen and (min-width:600px){
+    .imagenSub{
+        display: block;
+        margin-left: 150px;
+        width: 500px;
+    }
+
+    section{       
+    grid-template-areas:"botines1 botines2 botines3 botines4"
+                        "camiseta1 camiseta2 camiseta3 camiseta4";
+    margin: 50px;  
+    padding: 5px;}  
+}
+
+@media screen and (min-width:1024px){
+    .imagenSub{
+        display: block;
+        margin-left: 550px;
+        width: 500px;
+    }
+
+    section{       
+    grid-template-areas:"botines1 botines2 botines3 botines4"
+                        "camiseta1 camiseta2 camiseta3 camiseta4";
+    margin: 50px;  
+    padding: 5px;}  
+}
+
+
